@@ -1,0 +1,14 @@
+{
+  "name": "eversense-evidence",
+  "version": "1.0.0",
+  "description": "Eversense evidence page design to HTML and CSS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "author": "Premanshu",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

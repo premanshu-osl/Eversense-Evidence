@@ -1,0 +1,107 @@
+<nav class="header__nav">
+        <div class="header__links">gdfhgfhgf</div>
+        <div class="header__dropdowns">xhgfjfj</div>
+      </nav>
+      <div class="page-links">
+        <a class="logo-parent" href="#">
+          <img src="img/Eversense_logo_white.png" alt="" />
+        </a>
+        <a href="#">What is Eversense?</a>
+        <a href="#">Member Value</a>
+        <a href="#">Evidence</a>
+        <a href="#">Resource Library</a>
+        <a href="#">Reimbursement & Processing</a>
+      </div>
+      <h1 class="main-heading">Evidence</h1>
+      <div class="description">
+        <p class="description__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Velit vero totam harum ipsam quisquam dicta delectus molestiae <br />
+          animi beatae, quod nesciunt similique <br />
+          sint odit iste quo nostrum nobis quia reprehenderit?
+        </p>
+      </div>
+      <div class="desc__links">
+        <a class="desc" href="">REAL WORLD ADHERENCE</a>
+        <a class="desc" href="">IMPORTANCE OF TIME IN RANGE</a>
+        <a class="desc" href="">PRODUCT PERFORMANCE</a>
+        <a class="desc" href="">CLINICAL TRIALS</a>
+      </div>
+
+
+      .header__nav {
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  position: absolute;
+  height: 7vh;
+  width: 100vw;
+}
+
+.header__links {
+  background-color: $color-primary;
+}
+
+.header__dropdowns {
+  background-color: $color-secondary;
+}
+
+.page-links {
+  position: absolute;
+  margin-top: -1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.page-links a {
+  vertical-align: middle;
+  padding-left: 3rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.logo-parent {
+  line-height: 200px;
+
+  img {
+    vertical-align: middle;
+  }
+}
+
+.main-heading {
+  position: absolute;
+  text-align: left;
+  top: 40%;
+  left: 10%;
+  transform: translate(-10%, -40%);
+  color: #fff;
+  font-size: 4.2rem;
+}
+
+.description {
+  position: absolute;
+  top: 56%;
+  left: 14%;
+  transform: translate(-14%, -56%);
+}
+
+.description__text {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.desc__links {
+  position: absolute;
+  padding: 4rem;
+  bottom: 20px;
+  left: 10%;
+  transform: translate(-10%, -20px);
+}
+
+.desc {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.8rem;
+}
