@@ -7,57 +7,130 @@ html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif; }
 
-.header {
+/* Text Modifiers */
+.text-upper {
+  text-transform: uppercase; }
+
+.text-capital {
+  text-transform: capitalize; }
+
+.wrapper {
   background-image: url(../img/evidence-bg-image.png);
-  background-size: cover;
   background-position: top;
-  position: relative; }
-
-.header__inner-top {
+  background-size: cover;
+  height: 98vh;
   display: grid;
-  grid-template-columns: 6fr 4fr;
-  height: 5rem; }
+  grid-template-rows: 1fr 2fr 7fr 2fr; }
 
-.header__page-links {
-  background-color: #007bff;
-  color: #fff;
+.top-links {
+  display: grid;
+  grid-template-columns: 7fr 5fr; }
+
+.top-links-inner-blue {
+  background-color: blue;
+  color: white;
+  padding-left: 6rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.top-links-inner-blue a {
+  text-decoration: none;
+  color: white; }
+
+.top-links-inner-blue .grid-item-1 {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.top-links-inner-blue .grid-item-2 {
+  padding-left: 7rem;
+  font-size: 1.8rem; }
+
+.top-links-inner-grey {
+  display: grid;
+  grid-template-columns: 4fr 4fr 2fr 2fr;
+  background-color: grey;
+  justify-items: end;
+  padding-right: 2rem; }
+
+.top-links-inner-grey div {
+  display: flex;
+  align-items: center; }
+
+.internal-top {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold; }
+
+.internal-top:hover {
+  cursor: pointer; }
+
+/*.internal-top .dropdown-menu {
+  background-color: grey;
+  color: white;
+}
+
+.internal-top ul li:hover {
+  background-color: grey !important;
+}*/
+.tnav-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  align-items: center; }
+
+.tnav-links-inner {
+  padding-top: 1rem; }
+
+.tnav-links-inner a {
+  text-decoration: none;
+  color: white;
   font-size: 1.2rem;
   font-weight: 700; }
 
-.header__option-dropdown {
-  background-color: #6c757d;
-  color: #fff; }
-
-.hyperpage {
+.page-heading {
   padding-left: 6rem;
-  padding-right: 6rem;
-  margin-top: -5rem; }
-  .hyperpage a {
-    text-decoration: none;
-    color: #fff;
-    padding-left: 3rem;
-    font-size: 1.6rem;
-    font-weight: 700; }
+  padding-top: 3rem; }
 
-.img-logo-link {
-  line-height: 20rem; }
-  .img-logo-link img {
-    vertical-align: middle;
-    height: 5.5rem; }
+.page-heading h1 {
+  color: white;
+  font-size: 7.6rem;
+  font-weight: bolder;
+  margin-bottom: 0; }
 
-.text-uppercase {
-  text-transform: uppercase; }
+.page-heading p {
+  color: white;
+  font-size: 2.2rem;
+  max-width: 32%;
+  margin-bottom: 5rem; }
 
-.text-capitalize {
-  text-transform: capitalize;
-  height: 15rem;
-  width: 30rem; }
+.bnav-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 6rem;
+  padding-top: 3rem; }
 
-.main-headesc h1 {
-  font-size: 4.8rem; }
+.bnav-links .bnav-links-inner a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700; }
 
-.main-headesc p {
-  display: inline-block; }
+.bnav-links .bnav-links-inner a:hover {
+  border: 0.2rem solid white;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding-bottom: 0.5rem; }
+
+.bnav-links .bnav-links-inner a:active {
+  border: 0.2rem solid white;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  padding-bottom: 0.5rem; }
 
 .advantage {
   display: grid;
@@ -65,12 +138,13 @@ html {
 
 .advantage-text {
   background-color: #6610f2;
-  font-size: 2.3rem;
   color: #fff;
-  font-weight: 900;
   padding: 15rem 10rem; }
-  .advantage-text h2 {
-    max-width: 70%; }
+
+.advantage-text h2 {
+  max-width: 70%;
+  font-size: 3.2rem;
+  font-weight: bold; }
 
 .advantage-image img {
   max-width: 100%;
@@ -99,6 +173,31 @@ html {
   font-weight: bolder;
   line-height: 1.5; }
 
+.tab-section {
+  max-width: 40%;
+  font-weight: bold;
+  padding-left: 6rem; }
+
+.grid-wrapper {
+  display: grid;
+  grid-template-rows: 5fr 2fr 1fr 1fr 1fr 1fr 1fr;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  grid-gap: 0.1rem; }
+
+.grid-row-large {
+  display: grid;
+  grid-template-columns: 3fr 9fr; }
+
+.grid-rows {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-gap: 2rem; }
+
+.cols {
+  background-color: blue;
+  opacity: 0.7; }
+
 .more-info {
   display: grid;
   grid-template-columns: 1fr 1fr 5fr 5fr 1fr 1fr;
@@ -114,7 +213,7 @@ html {
   font-size: 2.2rem;
   font-weight: 100; }
 
-.btn {
+.bton {
   border: 0.2rem solid blue;
   padding: 2rem 3rem;
   margin-bottom: 2rem;
@@ -122,16 +221,14 @@ html {
   font-size: 1.4rem;
   font-weight: 700; }
 
-.btn-group {
+.bton-group {
   align-self: center; }
-  .btn-group a {
-    display: block; }
 
-.btn-group :first-child {
+.bton-group :first-child {
   background-color: blue;
   color: #fff; }
 
-.btn-group :last-child {
+.bton-group :last-child {
   color: blue; }
 
 .left-bk {
@@ -161,17 +258,20 @@ html {
   vertical-align: middle;
   display: grid;
   grid-template-rows: 1fr; }
-  .new-trials a {
-    text-decoration: none;
-    margin: auto; }
-    .new-trials a:first-child {
-      font-size: 2.4rem;
-      font-weight: 200;
-      color: #fff; }
-    .new-trials a::last-child {
-      font-size: 2.4rem;
-      font-weight: bolder;
-      color: #fff; }
+
+.new-trials a {
+  text-decoration: none;
+  margin: auto; }
+
+.spanner-one {
+  font-size: 2.4rem;
+  font-weight: 200;
+  color: #fff; }
+
+.spanner-two {
+  font-size: 2.4rem;
+  font-weight: bolder;
+  color: #fff; }
 
 .bibliography {
   margin: 10rem;
@@ -258,15 +358,17 @@ hr {
   font-weight: 100;
   line-height: 2;
   text-align: justify; }
-  .disclaimer-desc a {
-    text-decoration: underline;
-    color: #fff; }
+
+.disclaimer-desc a {
+  text-decoration: underline;
+  color: #fff; }
 
 .misc {
   padding-top: 5rem;
   padding-bottom: 5rem; }
-  .misc .misc-links {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #fff;
-    padding-right: 2rem; }
+
+.misc-links {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  padding-right: 2rem; }

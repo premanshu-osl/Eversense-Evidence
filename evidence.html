@@ -1,63 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <div class="header__inner-top">
-        <div class="header__page-links">
-          <a class="text-uppercase" href=""
-            >getting started on eversense cgm just got easier</a
-          >
-          <span>|</span>
-          <a class="text-uppercase" href="">eversense bridge program</a>
-          <span>></span>
+    <div class="wrapper">
+      <div class="top-links">
+        <div class="top-links-inner-blue">
+          <a class="text-upper" href="#">
+            getting started on eversense cgm just got easier
+          </a>
+          <span class="grid-item-1">|</span>
+          <a class="text-upper" href="#">
+            eversense bridge program
+            <span class="grid-item-2">></span>
+          </a>
         </div>
-        <div class="header__option-dropdown"></div>
+        <div class="top-links-inner-grey">
+          <div class="dropdown internal-top">
+            <div class="dropdown-toggle text-upper" data-toggle="dropdown">
+              patients <span class="caret"></span>
+            </div>
+            <ul class="dropdown-menu">
+              <li><a href="#">Purchase</a></li>
+              <li><a href="#">Replace</a></li>
+              <li><a href="#">Doubts</a></li>
+            </ul>
+          </div>
+          <div class="dropdown internal-top">
+            <div class="dropdown-toggle text-upper" data-toggle="dropdown">
+              resource library <span class="caret"></span>
+            </div>
+            <ul class="dropdown-menu">
+              <li><a href="#">About Sensor</a></li>
+              <li><a href="#">Trials</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <div class="info">
+            <img src="img/info_white_36x36.png" alt="" />
+          </div>
+          <div class="usa-ln">
+            <img src="img/usa-flag.png" alt="" />
+          </div>
+        </div>
       </div>
-      <div class="hyperpage">
-        <a class="img-logo-link" href="">
-          <img src="img/Eversense_logo_white-2x.png" alt="" />
-        </a>
-        <a class="text-capitalize" href="">what is eversense?</a>
-        <a class="text-capitalize" href="">member value</a>
-        <a class="text-capitalize" href="">evidence</a>
-        <a class="text-capitalize" href="">resource library</a>
-        <a class="text-capitalize" href="">reimbursement & processing</a>
+      <div class="tnav-links">
+        <div class="tnav-links-inner">
+          <img src="img/Eversense_logo_white.png" alt="Logo image" />
+        </div>
+        <div class="tnav-links-inner">
+          <a class="text-capital" href="#">
+            what is eversense?
+          </a>
+        </div>
+        <div class="tnav-links-inner">
+          <a class="text-capital" href="#">
+            member value
+          </a>
+        </div>
+        <div class="tnav-links-inner">
+          <a class="text-capital" href="#">
+            evidence
+          </a>
+        </div>
+        <div class="tnav-links-inner">
+          <a class="text-capital" href="#">
+            resource library
+          </a>
+        </div>
+        <div class="tnav-links-inner">
+          <a class="text-capital" href="#">
+            reimbursement & processing
+          </a>
+        </div>
       </div>
-      <div class="main-headesc">
-        <h1 class="text-uppercase">evidence</h1>
+      <div class="page-heading">
+        <h1 class="text-upper">evidence</h1>
         <p>
-          The advanced sensor technology and under-the-skin sensor help patients
+          The advanced sensor technology and inder-the-skin sensor help patients
           reach unprecedented levels of wear time, leading to improved clinical
           outcomes.
         </p>
       </div>
-      <div class="hover__links">
-        <a class="text-uppercase" href="">real-world adherence</a>
-        <a class="text-uppercase" href="">importance of time in range</a>
-        <a class="text-uppercase" href="">product performance</a>
-        <a class="text-uppercase" href="">clinical trials</a>
+      <div class="bnav-links">
+        <div class="bnav-links-inner">
+          <a class="text-upper" href="">
+            real-world adherence
+          </a>
+        </div>
+        <div class="bnav-links-inner">
+          <a class="text-upper" href="">
+            importance of time in range
+          </a>
+        </div>
+        <div class="bnav-links-inner">
+          <a class="text-upper" href="">
+            product performance
+          </a>
+        </div>
+        <div class="bnav-links-inner">
+          <a class="text-upper" href="">
+            clinical trials
+          </a>
+        </div>
       </div>
-    </header>
+    </div>
 
     <div class="advantage">
       <div class="advantage-text">
-        <div class="dotted"></div>
         <h2>
           STRONG ACCURACY AND OUTCOMES ACROSS ALL MAJOR INDICATORS
         </h2>
-        <div class="dotted"></div>
       </div>
       <div class="advantage-image">
         <img src="img/Eversense_CGM_MOA_Scene_05_Styleframe_v01.png" alt="" />
@@ -133,6 +199,75 @@
       </div>
     </div>
 
+    <div class="data-wrapper">
+      <h2 class="text-upper tab-section">
+        exceptional performance and real-world outcomes
+      </h2>
+      <div class="grid-wrapper">
+        <div class="grid-row-large">
+          <div></div>
+          <img
+            class="grid-wrapper-image"
+            src="img/iStock-1023456032-white-bg.png"
+            alt=""
+          />
+        </div>
+        <div class="grid-rows">
+          <div>
+            <h4 class="text-upper">a1c reduction</h4>
+            <p class="text-upper">overall a1c level</p>
+          </div>
+          <div class="cols">gfgfg</div>
+          <div class="cols">grgd</div>
+          <div class="cols">dfgfdg</div>
+        </div>
+        <div class="grid-rows">
+          <div>
+            <h4 class="text-upper">mard</h4>
+            <p class="text-upper">overall %</p>
+          </div>
+          <div class="cols">gfgfg</div>
+          <div class="cols">grgd</div>
+          <div class="cols">dfgfdg</div>
+        </div>
+        <div class="grid-rows">
+          <div>
+            <h4 class="text-upper">adherence</h4>
+            <p class="text-upper">hours per day</p>
+          </div>
+          <div class="cols">gfgfg</div>
+          <div class="cols">grgd</div>
+          <div class="cols">dfgfdg</div>
+        </div>
+        <div class="grid-rows">
+          <div>
+            <h4 class="text-upper">time in target</h4>
+            <p class="text-upper">overall %</p>
+          </div>
+          <div class="cols">gfgfg</div>
+          <div class="cols">grgd</div>
+          <div class="cols">dfgfdg</div>
+        </div>
+        <div class="grid-rows">
+          <div>
+            <h4 class="text-upper">reduction in time hypoglycemic</h4>
+          </div>
+          <div class="cols">gfgfg</div>
+          <div class="cols">grgd</div>
+          <div class="cols">dfgfdg</div>
+        </div>
+        <div class="grid-rows">
+          <div>
+            <h4 class="text-upper">hypoglycemic detection</h4>
+            <p class="text-upper">overall %</p>
+          </div>
+          <div class="cols">gfgfg</div>
+          <div class="cols">grgd</div>
+          <div class="cols">dfgfdg</div>
+        </div>
+      </div>
+    </div>
+
     <div class="more-info">
       <div class="rec-pattern">
         <img src="img/Rectangle_2.png" alt="" />
@@ -144,9 +279,9 @@
           our Performance and Outcomes Data Sheet.
         </p>
       </div>
-      <div class="btn-group">
-        <div class="btn">PRODUCT SHEET</div>
-        <div class="btn">SEE ADDITIONAL PRODUCT DETAILS</div>
+      <div class="bton-group">
+        <div class="bton">PRODUCT SHEET</div>
+        <div class="bton">SEE ADDITIONAL PRODUCT DETAILS</div>
       </div>
       <div class="right-bk"></div>
       <div class="rec-pattern pattern-right">
@@ -156,8 +291,8 @@
 
     <div class="new-trials">
       <a href="">
-        <span>NEXT:</span>
-        <span>Clinical Trials</span>
+        <span class="spanner-one">NEXT:</span>
+        <span class="spanner-two">Clinical Trials</span>
       </a>
     </div>
 
