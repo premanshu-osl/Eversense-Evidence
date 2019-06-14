@@ -204,6 +204,10 @@ html {
   padding-left: 6rem;
   padding-right: 6rem; }
 
+.image-wrapper div img {
+  max-width: 100%;
+  min-width: 30%; }
+
 .pretext {
   color: white;
   font-size: 1.6rem;
