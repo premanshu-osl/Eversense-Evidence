@@ -177,6 +177,28 @@ html {
   padding: 15rem 10rem;
 }
 
+.advantage-text ::before {
+  content: "";
+  background-image: url(../img/Rectangle.png);
+  position: absolute;
+  height: 383px;
+  width: 72px;
+  transform: rotate(90deg);
+  left: 237px;
+  top: 500px;
+}
+
+.advantage-text ::after {
+  content: "";
+  background-image: url(../img/Rectangle.png);
+  position: absolute;
+  height: 383px;
+  width: 72px;
+  transform: rotate(90deg);
+  left: 237px;
+  top: 970px;
+}
+
 .advantage-text h2 {
   max-width: 70%;
   font-size: 3.2rem;
@@ -221,28 +243,99 @@ html {
   padding-left: 6rem;
 }
 
-.grid-wrapper {
-  display: grid;
-  grid-template-rows: 5fr 2fr 1fr 1fr 1fr 1fr 1fr;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  grid-gap: 0.1rem;
-}
-
-.grid-row-large {
+.image-wrapper {
   display: grid;
   grid-template-columns: 3fr 9fr;
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
-.grid-rows {
+.pretext {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.centere {
+  text-align: center;
+  color: white;
+}
+
+.table-wrapper {
   display: grid;
-  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-columns: 3fr 9fr;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.head-rows {
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  padding-right: 3.8rem;
+}
+
+.head-rows div {
+  border: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.head-rows :first-child {
+  border: none;
+}
+
+.head-rows .tb-head {
+  border: 1px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  font-weight: 600;
+}
+
+.head-rows :last-child {
+  border: none;
+}
+
+.data-cols {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
   grid-gap: 2rem;
 }
 
-.cols {
-  background-color: blue;
-  opacity: 0.7;
+.dotted-style::before {
+  content: "";
+  background-image: url(../img/Rectangle.png);
+  position: absolute;
+  width: 9rem;
+  min-height: 91.7rem;
+  transform: translate(-40px, -35px);
+}
+
+.data-rows {
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  background-color: #6610f2;
+  opacity: 0.9;
+}
+
+.data-rows div {
+  border: 2px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.data-rows :first-child {
+  border: none;
+}
+
+.percent-data {
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
 }
 
 .more-info {
